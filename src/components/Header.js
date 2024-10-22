@@ -159,9 +159,9 @@ const HeaderList = () => {
       <div>
         <Fotter/>
       </div>
-      <div>
+      {/* <div>
         <Login/>
-      </div>
+      </div> */}
     </div>
   );
 }
