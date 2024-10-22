@@ -10,6 +10,9 @@ import Dashboardpayroll from './Dashboardpayroll';
 import ContactUs from './ContactUs';
 import Pricing from './Pricing';
 import Fotter from './Fotter';
+import Login from './Login';
+
+
 
 
 function Header({ onModulesClick, onExperienceClick, onContactUsClick, onClickSignIn }) {
@@ -58,7 +61,7 @@ const HeaderList = () => {
           backgroundImage: `url('topsection.png')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundPositionY: '4%',
+          backgroundPositionY: '16%',
           backgroundPositionX: 'center',
           minHeight: '150vh',
           width: '230vh',
@@ -155,6 +158,9 @@ const HeaderList = () => {
       </div>
       <div>
         <Fotter/>
+      </div>
+      <div>
+        <Login/>
       </div>
     </div>
   );

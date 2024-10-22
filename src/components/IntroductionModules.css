@@ -2,16 +2,18 @@
 
 .introduction-modules {
   color: white;
-  padding: 2rem;
   border-radius: 0.5rem;
   font-family: 'Poppins', sans-serif;
+ margin-top: -190px;
 }
 
+
 .introduction-modules h1 {
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     font-weight: 800;  /* Increased weight for more boldness */
     color: #a15cff; /* Purple color for the title */
     margin-bottom: 1rem;
+    margin-left: 250px;
   }
 
 .intro-description {
@@ -23,28 +25,33 @@
   margin-left: auto;
   margin-right: auto;
 }
-
 .module-icons {
   display: flex;
-  text-align: center;
-  justify-content: space-between;
-  font-size: 2.6rem; /* Larger size for the icons */
-  cursor: pointer;
-  margin-bottom: 2rem;
-   /* background-color: rgba(0, 0, 0, 0.3); Add a slight background for contrast */
+  justify-content: flex-start; /* Aligns icons to the left */
+  gap: 5px; /* Decrease this to reduce space between icons */
+  align-items: center;
+  padding: 1rem 0;
+  margin-left: 359px;
 }
 
 .module-icon {
-  text-align: center;
-  font-size: 1.5rem;
-  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.3s ease;
-  font-size: 2rem; /* Increase this value to make emoji icons larger */
+}
+
+.module-icon img {
+  width: 120px;
+  height: 120px;
+  margin: 0; /* Remove any margin */
+  padding: 0; /* Ensure no padding is applied */
 }
 
 .module-icon:hover {
   transform: scale(1.1);
 }
+
 
 .module-icon-name {
   font-size: 0.75rem;
@@ -60,7 +67,7 @@
     min-height: 300px;
     width: 100%; /* Ensure it takes the full width of its parent */
     max-width: 900px; /* Set a maximum width for the container */
-    height: 500px; /* Set a fixed height to keep it constant */
+    height: 550px; /* Set a fixed height to keep it constant */
     box-sizing: border-box; /* Include padding and border in width/height */
     margin: 0 auto; /* Center the module details horizontally */
   }
@@ -89,7 +96,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1rem;  
 }
 
 .module-details-section h3 {
@@ -175,3 +182,11 @@
 .triangle-right {
   border-left: 18px solid white; /* Adjust color and size as needed */
 }
+/* .introduction-modules {
+  background-image: url('../assets/images/Gradient 13.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+ 
+} */
+

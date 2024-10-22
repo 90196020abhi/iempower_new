@@ -5,8 +5,11 @@ import Task from '../assets/images/Task.png';
 import Purchase from '../assets/images/Purchase.png';
 import Expense from '../assets/images/Expense.png';
 import employee from '../assets/images/employee.png';
+import gradient from '../assets/images/Gradient 13.png';
 
 import './IntroductionModules.css';
+
+
 
 const ModuleIcon = ({ icon, name, onHover }) => (
   <div className="module-icon" onMouseEnter={() => onHover(name)}>
@@ -17,14 +20,14 @@ const ModuleIcon = ({ icon, name, onHover }) => (
 const IntroductionModules = () => {
   const [currentModule, setCurrentModule] = useState(0);
   const modules = [
-    { icon: <img src="/travel.png" alt="Travel Management" style={{ width: '50px', height: '50px' }} />, name: 'Travel Management', description: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    { icon: <img src="/travel.png" alt="Travel Management" style={{ width: '120px', height: '120px' }} />, name: 'Travel Management', description: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
       details: [
         { title: 'Trip Information', items: ['Trip Data/Totals', 'Receipts, Receipts Without Plan', 'Cost Assignment'] },
         { title: 'Travel Management', items: ['Trip Destinations', 'Expense Reporting (By Period)', 'Exceeded Trip Days'] },
         { title: 'Financial Aspects', items: ['FI Payment Date', 'Income Related Expenses', 'Income Tax recovery'] }
       ]
     },
-    { icon:  <img src="/time.png" alt="Time Management" style={{ width: '50px', height: '50px' }} />, name: 'Time Management', description: 'Manage employee time effectively with our comprehensive tools.',
+    { icon:  <img src="/time.png" alt="Time Management" style={{ width: '120px', height: '120px' }} />, name: 'Time Management', description: 'Manage employee time effectively with our comprehensive tools.',
       details: [
         { title: 'Planned Time', items: ['Shift Planning', 'Holiday Calendar'] },
         { title: 'Leave Management', items: ['Quotas and Acurals', 'Leave Applications'] },
@@ -32,25 +35,25 @@ const IntroductionModules = () => {
         { title: 'Timesheets', items: ['To Be Approved', 'Pending'] }
       ]
     },
-    { icon: <img src="/task.png" alt="Task Management" style={{ width: '50px', height: '50px' }} />, name: 'Task Management', description: 'Streamline project workflows and boost team productivity.',
+    { icon: <img src="/task.png" alt="Task Management" style={{ width: '120px', height: '120px' }} />, name: 'Task Management', description: 'Streamline project workflows and boost team productivity.',
       details: [
         { title: 'Activity Plan', items: ['Start -End Time', 'Duration', 'Priority', 'Description', 'Related Projects', 'Deadline'] },
         { title: 'Task Reports', items: ['Active Tasks', 'Tickets', 'Planned / Actual Tasks', 'Task Budget', 'Overdue Tasks'] }
       ]
     },
-    { icon: <img src="/purchase.png" alt="Purchase Requests" style={{ width: '50px', height: '50px' }} />, name: 'Purchase Requests', description: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    { icon: <img src="/purchase.png" alt="Purchase Requests" style={{ width: '120px', height: '120px' }} />, name: 'Purchase Requests', description: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
       details: [
         { title: 'Raise PR', items: ['Past PR', 'My PR tickets', 'PR - Pending my Action', 'PR - Completed my Action'] },
         { title: 'PR Reports', items: ['PR Pending Approvals', 'PR within Budgets', 'Open PRs', 'Closed PRs', 'Project wise PRs'] }
       ]
     },
-    { icon:<img src="/expense.png" alt="Expense Reimbursement" style={{ width: '50px', height: '50px' }} />, name: 'Expense Reimbursement', description: 'Take control of your company\'s finances with our robust tools.',
+    { icon:<img src="/expense.png" alt="Expense Reimbursement" style={{ width: '120px', height: '120px' }} />, name: 'Expense Reimbursement', description: 'Take control of your company\'s finances with our robust tools.',
       details: [
         { title: 'iExpense', items: ['Raise iExpense', 'My iExpense Requests', 'iExpense - Pending (My Action)', 'iExpense - Completed (My Action)'] },
         { title: 'Reimbursements', items: ['Reimbursement Requests', 'Description and Approvals'] }
       ]
     },
-    { icon: <img src="/employee.png" alt="Employee Central"  style={{ width: '50px', height: '50px' }} />, name: 'Employee Central', description: 'Empower your employees with'
+    { icon: <img src="/employee.png" alt="Employee Central"  style={{ width: '120px', height: '120px' }} />, name: 'Employee Central', description: 'Empower your employees with'
   }
   ];
 
@@ -70,9 +73,26 @@ const IntroductionModules = () => {
     const index = modules.findIndex(module => module.name === name);
     setCurrentModule(index);
   };
+ 
+
 
   return (
     <div className="introduction-modules">
+           <div
+        className="landing-page-background relative w-full bg-cover bg-center"
+        style={{
+          backgroundImage: `url('Gradient 13.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundPositionY: '16%',
+          backgroundPositionX: 'center',
+          minHeight: '150vh',
+          width: '230vh',
+          top: '100%',
+          rotate: '90',
+          backdropFilter: 'blur(20px)',
+        }}
+      >
       <h1>Introduction to your iEmpPower modules:</h1>
       <p className="intro-description">
         Discover our comprehensive suite of modules designed to streamline your HR 
@@ -92,7 +112,7 @@ const IntroductionModules = () => {
           {modules[currentModule].icon}
           <h2>{modules[currentModule].name}</h2>
         </div>
-
+ 
         <p>{modules[currentModule].description}</p>
 
         <div className="module-details-grid">
@@ -122,6 +142,7 @@ const IntroductionModules = () => {
         </button>
          )}
       </div>
+    </div>
     </div>
   );
 };

@@ -7,6 +7,7 @@ import EmployeeLogin from './components/EmployeeLogin';
 import AdminLogin from './components/AdminLogin';
 import ManagerLogin from './components/ManagerLogin';
 import IntroductionModules from './components/IntroductionModules';
+import Login from './components/Login';
 
 
 function App() {
@@ -38,7 +39,7 @@ function App() {
   // Handle Sign In and set user type
   const handleSignIn = (type) => {
     setUserType(type);
-    setCurrentPage('login');
+    setCurrentPage('Login');
   };
 
   // Handle Logout
@@ -63,9 +64,9 @@ function App() {
       {currentPage === 'contactUs' && <ContactUsPage />}
       
       {/* Handle Login Pages based on userType */}
-      {currentPage === 'login' && (
+      {currentPage === 'Login' && (
         <>
-          {userType === 'employee' && <EmployeeLogin onBack={() => navigateTo('home')} />}
+          {userType === 'Login' && <EmployeeLogin onBack={() => navigateTo('home')} />}
         </>
       )}
     </div>
