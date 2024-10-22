@@ -27,7 +27,7 @@ const IntroductionModules = () => {
         { title: 'Financial Aspects', items: ['FI Payment Date', 'Income Related Expenses', 'Income Tax recovery'] }
       ]
     },
-    { icon:  <img src="/time.png" alt="Time Management" style={{ width: '120px', height: '120px' }} />, name: 'Time Management', description: 'Manage employee time effectively with our comprehensive tools.',
+    { icon:  <img src="/Time.png" alt="Time Management" style={{ width: '120px', height: '120px' }} />, name: 'Time Management', description: 'Manage employee time effectively with our comprehensive tools.',
       details: [
         { title: 'Planned Time', items: ['Shift Planning', 'Holiday Calendar'] },
         { title: 'Leave Management', items: ['Quotas and Acurals', 'Leave Applications'] },
@@ -35,19 +35,19 @@ const IntroductionModules = () => {
         { title: 'Timesheets', items: ['To Be Approved', 'Pending'] }
       ]
     },
-    { icon: <img src="/task.png" alt="Task Management" style={{ width: '120px', height: '120px' }} />, name: 'Task Management', description: 'Streamline project workflows and boost team productivity.',
+    { icon: <img src="/Task.png" alt="Task Management" style={{ width: '120px', height: '120px' }} />, name: 'Task Management', description: 'Streamline project workflows and boost team productivity.',
       details: [
         { title: 'Activity Plan', items: ['Start -End Time', 'Duration', 'Priority', 'Description', 'Related Projects', 'Deadline'] },
         { title: 'Task Reports', items: ['Active Tasks', 'Tickets', 'Planned / Actual Tasks', 'Task Budget', 'Overdue Tasks'] }
       ]
     },
-    { icon: <img src="/purchase.png" alt="Purchase Requests" style={{ width: '120px', height: '120px' }} />, name: 'Purchase Requests', description: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
+    { icon: <img src="/Purchase.png" alt="Purchase Requests" style={{ width: '120px', height: '120px' }} />, name: 'Purchase Requests', description: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit interdum, ac aliquet odio mattis.',
       details: [
         { title: 'Raise PR', items: ['Past PR', 'My PR tickets', 'PR - Pending my Action', 'PR - Completed my Action'] },
         { title: 'PR Reports', items: ['PR Pending Approvals', 'PR within Budgets', 'Open PRs', 'Closed PRs', 'Project wise PRs'] }
       ]
     },
-    { icon:<img src="/expense.png" alt="Expense Reimbursement" style={{ width: '120px', height: '120px' }} />, name: 'Expense Reimbursement', description: 'Take control of your company\'s finances with our robust tools.',
+    { icon:<img src="/Expense.png" alt="Expense Reimbursement" style={{ width: '120px', height: '120px' }} />, name: 'Expense Reimbursement', description: 'Take control of your company\'s finances with our robust tools.',
       details: [
         { title: 'iExpense', items: ['Raise iExpense', 'My iExpense Requests', 'iExpense - Pending (My Action)', 'iExpense - Completed (My Action)'] },
         { title: 'Reimbursements', items: ['Reimbursement Requests', 'Description and Approvals'] }
