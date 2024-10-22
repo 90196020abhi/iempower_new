@@ -63,10 +63,9 @@
   display: flex;
   align-items: center;
   font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0.3);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.3), #33333300);
   padding: 0.5rem 0.7rem 1.3rem 0.5rem;
   border-radius: 4px;
-  
   color: #d8c8ff;
   height: 26px;
 }
@@ -82,10 +81,11 @@
   top: 50%;
   transform: translateY(-50%);
   width: 50%;
-  height: 86%;   /* size of the image */
+  height: 80%;   /* size of the image */
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-right: 60px;
 }
 
 .possibilities-image-container img {
@@ -117,7 +117,7 @@
     font-size: 2rem;
   }
 
-  .possibilities-image-container {
+  /* .possibilities-image-container {
     position: relative;
     width: 100%;
     height: auto;
@@ -129,7 +129,7 @@
     width: 100%;
     height: auto;
     object-fit: contain;
-  }
+  } */
 }
 
 .blog-section {
