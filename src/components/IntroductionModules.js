@@ -53,8 +53,13 @@ const IntroductionModules = () => {
         { title: 'Reimbursements', items: ['Reimbursement Requests', 'Description and Approvals'] }
       ]
     },
-    { icon: <img src="/employee.png" alt="Employee Central"  style={{ width: '120px', height: '120px' }} />, name: 'Employee Central', description: 'Empower your employees with'
-  }
+    { icon: <img src="/employee.png" alt="Employee Central"  style={{ width: '120px', height: '120px' }} />, name: 'Employee Central', description: 'Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc  vulputate libero et velit interdum, ac aliquet adio mattis',  
+    details: [
+      { title: 'Employee Management', items: ['Employee Master Data', 'Planned Time Data'] },
+      { title: 'Payroll & Compensation', items: ['Payroll Data(One-time,Recurring)', 'Payslips & Form16','Income Tax Declaration','Flexible Benifits'] },
+      { title: 'Payroll Reports', items: ['CTC Report', 'Salary Register', 'Paymemt & Deduction','Bank Statements','FI-CO Postings'] }
+    ]
+  },
   ];
 
   const nextModule = () => {

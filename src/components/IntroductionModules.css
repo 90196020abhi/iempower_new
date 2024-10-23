@@ -64,7 +64,7 @@
     padding: 1.6rem 4rem; /* Added more padding for left and right space */
     border-radius: 0.5rem;
     position: relative;
-    min-height: 300px;
+    min-height: 400px;
     width: 100%; /* Ensure it takes the full width of its parent */
     max-width: 900px; /* Set a maximum width for the container */
     height: 550px; /* Set a fixed height to keep it constant */
@@ -95,7 +95,7 @@
 .module-details-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  gap: 0rem;
   margin-bottom: 1rem;  
 }
 
@@ -104,16 +104,17 @@
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
-
 .module-details-section ul {
   list-style-type: none;
   padding: 0;
+  margin:0; /* Remove any extra space caused by ul margin */
 }
-
 .module-details-section li {
   font-size: 0.875rem;
   color: #e0e0e0;
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.1rem; /* Reduce space between items */
+  line-height: 1.2; /* Adjust line-height if needed */
+
 }
 
 /* Chevron buttons */
@@ -182,11 +183,5 @@
 .triangle-right {
   border-left: 18px solid white; /* Adjust color and size as needed */
 }
-/* .introduction-modules {
-  background-image: url('../assets/images/Gradient 13.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
- 
-} */
+
 
