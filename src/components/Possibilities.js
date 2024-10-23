@@ -23,12 +23,7 @@ const Possibilities = () => {
           <img src="/posiilities.png" alt="Dashboard" />
         </div>
       </div>
-      <div className="blog-section">
-      <h2>
-      iEmpPower <span style={{ color: 'white' }}>Blog</span>
-    </h2>
-        <p>Discover articles and tutorials to help you build better</p>
-      </div>
+      
     </div>
   );
 };

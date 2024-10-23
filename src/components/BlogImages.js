@@ -68,6 +68,12 @@ const BlogImages = () => {
 
 
   return (
+    <div className="blog-section">
+    <h2>
+    iEmpPower <span style={{ color: 'white' }}>Blog</span>
+  </h2>
+      <p>Discover articles and tutorials to help you build better</p>
+    
     <div className="blog-images-container">
       <button className="nav-button left" onClick={prevImage}>
         <ChevronLeft />
@@ -87,6 +93,7 @@ const BlogImages = () => {
       <button className="nav-button right" onClick={nextImage}>
         <ChevronRight />
       </button>
+    </div>
     </div>
   );
 };
